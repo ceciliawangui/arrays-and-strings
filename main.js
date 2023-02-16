@@ -1,8 +1,11 @@
 /*push(): The push() method adds one or more elements to the end 
 of an array and returns the new length of the array.*/
 let fruits = ['apple', 'banana','mango'];
-fruits.push('orange');
+fruits.push('kiwi');
 console.log(fruits);
+
+
+
 
 /*The shift() method removes the first element from an array and and changes
  the length of an array*/
@@ -10,48 +13,71 @@ console.log(fruits);
  x.shift();
  console.log(x);
 
+
+
  /*The unshift() method adds one or more elements to the beginning of an
   array and returns the new length of the array.*/
   let b =['banana','mango'];
   b.unshift('apple');
   console.log(b);
+
+
+
   /*The pop() method removes the last element from an array and 
   returns that removed element.it also changes array length*/
   let c =['apple','banana','mango'];
  c.pop();
  console.log(c);
 
+
+
 /*The length property returns the number of elements in an array.
 Example:*/
 let d=['cess','jill','ian','ann'];
 console.log(d.length);
+
+
 /*The splice() method changes the contents of an array by removing or replacing existing
  elements and/or adding new elements*/
  let e=['cess','jill','ian','ann'];
  e.splice(2,1,'marion');
  console.log(e)
 
+
+
+
  /*The reduce() method applies a function against an accumulator and each element in the array to
   reduce it to a single value.*/
   let numbers = [10, 20, 30, 40, 50];
 let sum = numbers.reduce((acc, curr) => acc + curr);
-console.log(sum); 
+console.log(sum);
+
+
 /*The includes() method determines whether an 
 array includes a certainand if present it returns TRUE/FALSE*/
 let f=['cess','jill','ian','ann'];
 console.log(f.includes('marion'));
 console.log(f.includes('sam'));
+
+
 /*The join() method creates and returns a new string by concatenating all
  of the elements in an array.*/
  let g = ['cess','jill','ian','Ann'];
 let gString = g.join(', ');
-console.log(gString); 
+console.log(gString);
+
+
 
 /*The indexOf() method returns the index of the first occurrence of a specified value in an array,
  or -1 if it is not present.*/
  let h = ['apple', 'banana', 'orange'];
 console.log(h.indexOf('banana')); 
-console.log(h.indexOf('mango')); 
+console.log(h.indexOf('mango'));
+
+
+
+
+
 /*The find() method returns the value of the first element in an array that satisfies the provided testing function,
  or undefined if no values satisfy the function.In this example, the find() method is used to find the first number in the array 
  that is greater than 3In this case, the arrow function (number => number > 3) checks if the number is greater than 3, and returns 
@@ -59,6 +85,8 @@ console.log(h.indexOf('mango'));
  let number = [1, 2, 3, 4, 5];
 let foundNumber = number.find(number => number > 3);
 console.log(foundNumber); 
+
+
 /*The charAt() method returns the character at the specified index in a string.
 In this example, the charAt() method is used to retrieve the character at index 1 in the string str, 
 which is "e".
@@ -71,12 +99,16 @@ and returns a new string.In this example, the concat() method is used to concate
  let str1 = "Hello, ";
 let str2 = "world!";
 let greeting = str1.concat(str2);
-console.log(greeting); 
+console.log(greeting);
+
+
 /*The replace() method replaces a specified value or regular expression in a string with another value, and returns a new string.
 In this example, the replace() method is used to replace the URL in str with a new URL.*/
 let str3 = "Please visit https://www.example.com";
 let newStr3 = str3.replace("https://www.example.com", "https://www.newsite.com");
 console.log(newStr3); // Output: "Please visit https://www.newsite.com"
+
+
 
 /*The split() method splits a string into an array of substrings based on a 
 specified delimiter.In this example, the split() method is used to split the string str into an array of strings, with the comma and
@@ -84,6 +116,9 @@ specified delimiter.In this example, the split() method is used to split the str
  let str4 = "apple, banana, orange";
 let arr = str4.split(", ");
 console.log(arr); // Output: ["apple", "banana", "orange"]
+
+
+
 
 /*The substr() method returns a portion of a string starting from the specified index and up to the specified length.
   In this example, the substr() method is used to extract the substring "world" from str.*/
@@ -96,24 +131,31 @@ In this example, the substring() method is used to extract the substring "world"
 let str6 = "Hello, world!";
 let newStr6 = str6.substring(7, 12);
 console.log(newStr6); // Output: "world"
+
+
+
 /*The slice() method returns a portion of a string between the specified start and end indexes.
 In this example, the slice() method is used to extract the substring "world" from str.*/
 let str7 = "Hello, world!";
 let newStr7 = str7.slice(7, 12);
 console.log(newStr7); // Output: "world"
 
+
 /*toUpperCase(): The toUpperCase() method converts a string to uppercase letters.
 */
 let str8 = "Hello, world!";
 let newStr8 = str8.toUpperCase();
 console.log(newStr8);
+
+
+
 /*toLowerCase(): The toLowerCase() method converts a string to lowercase letters.
 In this example, the toLowerCase() method is used to convert the string str to lowercase letters.*/
 let str9 = "Hello, WORLD!";
 let newStr9 = str9.toLowerCase();
 console.log(newStr9); // Output: "hello, world!"
 
-
+/*group work/
 /*TO FIND DUPLICATES IN AN ARRAY//
 In this code, we start by creating an array array with some values, including duplicates. 
 We also create an empty array duplicates to store the duplicate values we find.
@@ -173,12 +215,13 @@ console.log("Minimum value: " + minValue); // Output: "Minimum value: 2"
 console.log("Maximum value: " + maxValue); // Output: "Maximum value: 10"
 
 
+
 /*Move all the negative elements to one side
 In this example, the function is called with an array containing both positive and negative elements.
  After calling the function, the negative elements are all moved to the left side of the array.*/
  let arr2 = [1, -2, 3, -4, 5, -6];
 arr2 = moveNegativeElementsToLeft(arr2);
-console.log(arr2); // Output: [-2, -4, -6, 1, 3, 5]
+console.log(arr2); // Output: [-2, -4, -6, 1, 3, 5//
 
 let name='whitecars'
 console.log(isnamePalindrome('whitecar')); // Output: true
